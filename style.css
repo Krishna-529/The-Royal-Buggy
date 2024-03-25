@@ -206,10 +206,10 @@ h1{
 .cardholder{
     z-index: -1;
     position: absolute;
-    margin-top: -76vh;
+    margin-top: -500px;
     margin-left: 5vw;
-    margin-right:  10vw;
-    height: 500px;
+    margin-right:  5vw;
+    height: 80vh;
     width: 80vw;
     display: flex;
     justify-content: center;
@@ -217,4 +217,21 @@ h1{
     border: black;
     border-width: 20px;
     border-radius: 25%;
+}
+
+@media (max-width: 600px){
+    .cardholder{
+        margin-top: -30vh;
+        margin-left: 6%;
+        margin-right: 10%;
+        height: 40vh;
+        width: 80vw;
+    }
+    .card{
+        font-size: 15px;
+
+    }
+    body{
+        padding: 10px;
+    }
 }
