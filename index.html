@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win the argument</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="intro">
+            <div class="upper-h"><h1>The Dice Game</h1></div>
+            <div class="upper-para">Here to resolve your casual fights.</div>
+        </div>
+    </header>
+    <p class="lower-para">Who wins the game wins the argument.</p>
+    <div class="container">
+        <div class="left-container">
+            <div onclick="roll_1()" id="player-1" class="left-dice dice"></div>
+            <div>Player 1</div>
+        </div>
+        <div class="right-container">
+            <div onclick="roll_2()" id="player-2" class="right-dice dice"></div>
+            <div>Player 2</div>
+        </div>
+    </div>
+    <div class="cardholder" id="cardholder"><div class="card-1" id="card">
+    </div></div>
+    <script src="./script.js"></script>
+</body>
+</html>

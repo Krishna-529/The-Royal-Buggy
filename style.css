@@ -1,0 +1,220 @@
+body{
+    background-color: #eef5ff;
+    font-family: "Comic Sans MS", cursive;
+    padding: 40px;
+    padding-top: 10px;
+    position: relative;
+}
+
+header{
+    background: linear-gradient(#86b6f6, #c5ddfc);
+    height: 11vw;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    z-index: 0;
+}
+.intro{
+    /* background-color: red; */
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.upper-h{
+    padding: 0%;
+    margin: 0%;
+    /* background-color: aqua; */
+    font-size: 2.7vw;
+    font-weight: 700;
+}
+h1{
+    margin: 0%;
+    padding: 0%;
+}
+.upper-para{
+    /* background-color: rgb(100, 224, 96); */
+    align-self: end;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.lower-para{
+    padding-top: 0%;
+    text-align: center;
+    font-size: 2.5vw;
+    z-index: 0;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 0;
+}
+
+.dice{
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+}
+.left-container, .right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 2vw;
+}
+.left-dice,.right-dice{
+    background: url(./assets/1.png);
+    background-size: cover;
+}
+.dice-has-1{
+    background: url(./assets/1.png);    
+    background-size: cover;
+}
+.dice-has-2{
+    background: url(./assets/2.png);    
+    background-size: cover;
+}
+.dice-has-3{
+    
+    background: url(./assets/3.png);    
+    background-size: cover;
+}
+.dice-has-4{
+    background: url(./assets/4.png);    
+    background-size: cover;
+}
+.dice-has-5{
+    background: url(./assets/5.png);    
+    background-size: cover;
+}
+.dice-has-6{
+    background: url(./assets/6.png);    
+    background-size: cover;
+}
+
+.card {
+    width: 80%;
+    height: 100%; /* Set the initial height of the card */
+    background-color: rgba(255, 252, 0, 0.5); /* Green transparent color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 0.75s forwards;
+    text-align: center;
+    font-size: 25px;
+    border: black 2.5px solid;
+    border-radius: 30px;
+  }
+.card h2{
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    font-size: 35px;
+    font-weight: bold;
+}
+@keyframes bounce
+{
+    0%{
+        transform: translateY(-100%);
+        /* transform: scale(0); */
+    }
+    16.7414%{
+        transform: translateY(-90%);
+        /* transform: scale(0.1); */
+    }
+    23.6760%{
+        transform: translateY(-80%);
+        /* transform: scale(0.2);/ */
+    }
+    24.4705%{
+        transform: translateY(-75%);
+        /* transform: scale(0.25); */
+    }
+    28.9970%{
+        transform: translateY(-70%);
+        /* transform: scale(0.3); */
+    }
+    33.4829%{
+        transform: translateY(-60%);
+        /* transform: scale(0.4); */
+    }
+    37.4350%{
+        transform: translateY(-50%);
+        /* transform: scale(0.5); */
+    }
+    44.00805%{
+        transform: translateY(-40%);
+        /* transform: scale(0.6); */
+    }
+    44.2937%{
+        transform: translateY(-30%);
+        /* transform: scale(0.7); */
+    }
+    45.8484%{
+        transform: translateY(-25%);
+        /* transform: scale(0.75); */
+    }
+    47.3520%{
+        transform: translateY(-20%);
+        /* transform: scale(0.8); */
+    }
+    50.2244%{
+        transform: translateY(-10%);
+        /* transform: scale(0.9); */
+    }
+    52.9411%{
+        transform: translateY(0%);
+        /* transform: scale(1); */
+    }
+    58.1098%{
+        transform: translateY(-5.5555%);
+        /* transform: scale(0.944444); */
+    }
+    70.5882%{
+        transform: translateY(-11.1111%);
+        /* transform: scale(0.888888); */
+    }
+    83.0665%{
+        transform: translateY(-5.5555%);
+        /* transform: scale(0.944444); */
+    }
+    88.2352%{
+        transform: translateY(0%);
+        /* transform: scale(1); */
+    }
+    94.1176%{
+        transform: translateY(-1.2345%);
+        /* transform: scale(1-0.0123456); */
+    }
+    100%{
+        transform: translateY(0%);
+        /* transform: scale(1); */
+    }
+}
+  
+.cardholder{
+    z-index: -1;
+    position: absolute;
+    margin-top: -76vh;
+    margin-left: 5vw;
+    margin-right:  10vw;
+    height: 500px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black;
+    border-width: 20px;
+    border-radius: 25%;
+}
